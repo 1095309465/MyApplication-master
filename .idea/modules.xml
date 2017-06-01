@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Handler/Handler.iml" filepath="$PROJECT_DIR$/Handler/Handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyApplication-master.iml" filepath="$PROJECT_DIR$/MyApplication-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RetroFit/RetroFit.iml" filepath="$PROJECT_DIR$/RetroFit/RetroFit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SanMao/SanMao.iml" filepath="$PROJECT_DIR$/SanMao/SanMao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cheesesquare/cheesesquare.iml" filepath="$PROJECT_DIR$/cheesesquare/cheesesquare.iml" />
+    </modules>
+  </component>
+</project>

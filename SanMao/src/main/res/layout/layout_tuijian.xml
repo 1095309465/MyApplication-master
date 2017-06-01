@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/color_green">
+
+        <com.sanmao.you.widget.DrawableCenterTextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/main_ed_shape"
+            android:drawableLeft="@mipmap/search_green_left"
+            android:gravity="center_vertical"
+            android:text="搜索目的地、景区、攻略" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f8f8f8"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <android.support.v4.view.ViewPager
+
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                </android.support.v4.view.ViewPager>
+
+                <LinearLayout
+                    android:id="@+id/lin_dot"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignBottom="@id/viewPager"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@mipmap/icon_tab_recommend_selected"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="热门景区"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:drawableLeft="@mipmap/icon_referesh"
+                    android:paddingLeft="10dp"
+                    android:text="换一换"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_remen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@mipmap/icon_new_scenic"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="最新景区"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:drawableLeft="@mipmap/icon_referesh"
+                    android:paddingLeft="10dp"
+                    android:text="换一换"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_zuixin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#FFFFFF">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_zuixin_h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#FFFFFF">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <com.sanmao.you.widget.DrawableCenterTextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableLeft="@mipmap/icon_month_hot"
+                android:gravity="center_vertical"
+                android:text="本月热门目的地" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_benyue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            <com.sanmao.you.widget.DrawableCenterTextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@mipmap/icon_collected"
+                android:gravity="center_vertical"
+                android:text="达人荣誉榜" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_daren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

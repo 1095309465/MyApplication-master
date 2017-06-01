@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#EEEEEE"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_tuijian"
+
+                style="@style/tab_tuijian_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/img_tuijian"
+                android:onClick="btn"
+                android:text="推荐" />
+
+            <TextView
+                android:id="@+id/tv_mudidi"
+                style="@style/tab_tuijian_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/img_mudidi"
+                android:onClick="btn"
+                android:text="目的地" />
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="60dp"
+            android:layout_height="1dp" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_gongju"
+                style="@style/tab_tuijian_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/img_tool"
+                android:onClick="btn"
+                android:text="工具" />
+
+            <TextView
+                android:id="@+id/tv_wode"
+                style="@style/tab_tuijian_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/img_mine"
+                android:onClick="btn"
+                android:text="我的" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lin">
+
+    </FrameLayout>
+
+    <CheckBox
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/checkimg"
+        android:button="@null" />
+</RelativeLayout>
