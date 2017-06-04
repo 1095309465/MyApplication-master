@@ -8,6 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/GoogleMap" />
+            <option value="$PROJECT_DIR$/GoogleMapTest" />
             <option value="$PROJECT_DIR$/Handler" />
             <option value="$PROJECT_DIR$/RetroFit" />
             <option value="$PROJECT_DIR$/SanMao" />

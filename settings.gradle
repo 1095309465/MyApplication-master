@@ -1,1 +1,1 @@
-include ':Handler', ':SanMao', ':cheesesquare', ':RetroFit'
+include ':Handler', ':SanMao', ':cheesesquare', ':RetroFit', ':GoogleMap', ':GoogleMapTest'
